@@ -20,8 +20,15 @@ Abaixo temos uma lista de pessoas que participaram deste projeto ao longo dos an
 
 ### Equipe 1º/2023
 
-| Nome | E-mail | Cargo |
+| E-mail | Nome | Função |
 |------|--------|-------|
-| xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Desenvolvedor Frontend |
-| xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Desenvolvedor Backend |
-| xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Scrum Master e Analista de Requisitos |
+| sarah._gleice@hotmail.com | Sarah Gleice Andrade de Souza | Gerente de Projeto e Dono do Produto |
+| milena.borges@iesb.edu.br | Milena de Brito Borges | Scrum Master e Analista de Requisitos |
+| vitorvbtf@gmail.com | Vítor Bruno Toscano Ferreira | Lider de Equipe e Desenvolvedor Frontend |
+| isaias.ramos.olive@gmail.com | Isaías Ramos de Oliveira | Desenvolvedor Frontend |
+| estudos.jcj@gmail.com | Letícia Oliveira do Nascimento | Desenvolvedor Frontend |
+| rgn.df.18@gmail.com | Rafael Gonçalves Nobre | Desenvolvedor Frontend |
+| rodrigo.verbo@gmail.com | Rodrigo Braga Sato de Santana | Lider de Equipe e Desenvolver Backend | 
+| thomaz_ca12@hotmail.com | Thomaz Conessa | Desenvolvedor Backend |
+| dinizmedeirosgabriel@gmail.com | Gabriel Diniz Medeiros | Desenvolvedor Backend |
+| thiago.ltltur@gmail.com | Thiago Oliveira de Lima | Desenvolvedor Backend |
