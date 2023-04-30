@@ -135,4 +135,13 @@ Exemplo:
 | João Silva   | joao.silva@teste.com| 123456 | Sucesso: Todos os campos preenchidos |
 | Maria Santos |                     | abcdef | Erro: Email não preenchido          |
 | José Pereira | jose@teste.com      |        | Erro: Senha não preenchida          |
+
+
+## Controle de Versão
+
+| Versão | Data       | Autor            | Descrição das Mudanças       |
+|--------|------------|------------------|------------------------------|
+| 1.0    | 2023-04-30 | Fulano de Tal    | Criação da história de usuário|
+| 1.1    | 2023-05-02 | Ciclano da Silva | Adição de critérios TDD      |
+| 1.2    | 2023-05-05 | Beltrano Souza   | Atualização dos cenários BDD |
 ```
