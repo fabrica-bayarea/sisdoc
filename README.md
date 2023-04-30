@@ -23,7 +23,7 @@ Abaixo temos uma lista de pessoas que participaram deste projeto ao longo dos an
 | E-mail | Nome | Função |
 |------|--------|-------|
 | sarah._gleice@hotmail.com | Sarah Gleice Andrade de Souza | Gerente de Projeto e Dono do Produto |
-| milena.borges@iesb.edu.br | Milena de Brito Borges | Scrum Master e Analista de Requisitos |
+| milena.borges@iesb.edu.br | Milena de Brito Borges | Scrum Master, Analista de Requisitos e Testes|
 | vitorvbtf@gmail.com | Vítor Bruno Toscano Ferreira | Lider de Equipe e Desenvolvedor Frontend |
 | isaias.ramos.olive@gmail.com | Isaías Ramos de Oliveira | Desenvolvedor Frontend |
 | estudos.jcj@gmail.com | Letícia Oliveira do Nascimento | Desenvolvedor Frontend |
