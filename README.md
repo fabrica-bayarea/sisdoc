@@ -20,7 +20,8 @@ Abaixo temos uma lista de pessoas que participaram deste projeto ao longo dos an
 
 ### Equipe 1º/2023
 
-Nome | E-mail | Cargo |
-xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Desenvolvedor Frontend |
-xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Desenvolvedor Backend |
-xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Scrum Master e Analista de Requisitos |
+| Nome | E-mail | Cargo |
+|------|--------|-------|
+| xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Desenvolvedor Frontend |
+| xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Desenvolvedor Backend |
+| xxxxxxxxxxxx | xxxxxxxxxxxxxxx | Scrum Master e Analista de Requisitos |
