@@ -12,7 +12,12 @@ Detalhar como um usuário pode instalar e usar o sistema
 
 ## Tecnologias
 
-Informar quais tecnologias foram usadas no projeto
+### Front-end
+ - React
+ - Redux
+ - JavaScript
+ - CSS
+ - HTML
 
 ## Autores
 
