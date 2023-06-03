@@ -39,7 +39,7 @@ Os critérios de aceitação são cenários BDD que descrevem o comportamento es
 
 Normalmente colocamos no critério de aceitação uma imagem (um prototipo) ao final do cenário.
 
-### Salvando Documento
+### Salvando Documento (Sprint 4)
 
 **Dado** que digitei todos os campos do formulário
 
@@ -47,7 +47,7 @@ Normalmente colocamos no critério de aceitação uma imagem (um prototipo) ao f
 
 **Então** o sistema deve salvar os dados
 
-### Salvando Documento
+### (C001) Salvando Documento (Sprint 3)
 
 **Dado** que digitei todos os campos do formulário
 
