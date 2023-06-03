@@ -55,7 +55,7 @@ Normalmente colocamos no critério de aceitação uma imagem (um prototipo) ao f
 
 **Então** o sistema deve descartar todos os valores digitados e voltar para a página de pesquisa
 
-
+Correção
 
 
 ![Tela de Cadastro de Documento](../img/cad_documento.png)
