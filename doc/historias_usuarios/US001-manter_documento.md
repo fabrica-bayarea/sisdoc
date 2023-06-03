@@ -40,13 +40,19 @@ Os critérios de aceitação são cenários BDD que descrevem o comportamento es
 Normalmente colocamos no critério de aceitação uma imagem (um prototipo) ao final do cenário.
 
 ### Salvando Documento
+
 **Dado** que digitei todos os campos do formulário
+
 **Quando** eu clicar no botão [Salver]
+
 **Então** o sistema deve salvar os dados
 
 ### Salvando Documento
+
 **Dado** que digitei todos os campos do formulário
+
 **Quando** eu clicar no botão [Voltar]
+
 **Então** o sistema deve descartar todos os valores digitados e voltar para a página de pesquisa
 
 
