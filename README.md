@@ -19,6 +19,11 @@ Detalhar como um usuário pode instalar e usar o sistema
  - CSS
  - HTML
 
+ ### Back-end
+ - NodeJS
+ - Express
+ - PostgreSQL
+
 ## Autores
 
 Abaixo temos uma lista de pessoas que participaram deste projeto ao longo dos anos.
