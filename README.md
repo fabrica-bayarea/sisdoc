@@ -13,11 +13,10 @@ Detalhar como um usuário pode instalar e usar o sistema
 ## Tecnologias
 
 ### Front-end
- - React
- - Redux
+ - Next
+ - Redux saga
  - JavaScript
- - CSS
- - HTML
+ - Styled Components
 
  ### Back-end
  - NodeJS
@@ -34,8 +33,7 @@ Abaixo temos uma lista de pessoas que participaram deste projeto ao longo dos an
 |------|--------|-------|
 | sarah._gleice@hotmail.com | Sarah Gleice Andrade de Souza | Gerente de Projeto e Dono do Produto |
 | milena.borges@iesb.edu.br | Milena de Brito Borges | Scrum Master, Analista de Requisitos e Testes|
-| vitorvbtf@gmail.com | Vítor Bruno Toscano Ferreira | Lider de Equipe e Desenvolvedor Frontend |
-| isaias.ramos.olive@gmail.com | Isaías Ramos de Oliveira | Desenvolvedor Frontend |
+| isaias.ramos.olive@gmail.com | Isaías Ramos de Oliveira | Lider de Equipe e Desenvolvedor Frontend |
 | leticia.jcj@gmail.com | Letícia Oliveira do Nascimento | Desenvolvedor Frontend |
 | rgn.df.18@gmail.com | Rafael Gonçalves Nobre | Desenvolvedor Frontend |
 | rodrigo.verbo@gmail.com | Rodrigo Braga Sato de Santana | Lider de Equipe e Desenvolver Backend | 
