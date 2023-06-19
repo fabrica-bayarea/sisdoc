@@ -16,7 +16,7 @@ Detalhar como um usuário pode instalar e usar o sistema
  - Next
  - Redux saga
  - JavaScript
- - Styled Components
+ - Emotion
 
  ### Back-end
  - NodeJS
