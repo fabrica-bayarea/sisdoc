@@ -4,6 +4,7 @@ const Doc = () => {
   return (
     <div className={style.doc}>
       <h1>Doc</h1>
+      <p>lorem</p>
     </div>
   )
 }
