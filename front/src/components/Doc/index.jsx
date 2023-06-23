@@ -3,7 +3,12 @@ import style from './Doc.module.css'
 const Doc = () => {
   return (
     <div className={style.doc}>
-      <h1>Doc</h1>
+      
+    <div id='card'>
+      <h5>Conteúdo do Card</h5>
+
+    </div>
+      
     </div>
   )
 }

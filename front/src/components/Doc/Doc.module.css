@@ -1,3 +1,20 @@
 .doc{
-    background-color: orangered;
+    background-color: rgb(241, 239, 239);
+}
+
+#card {
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+  margin: 10px;
+  border: 50px;
+  flex-grow: 1;
+  border-radius: 12px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0.6, 0.3);
+}
+
+h5 {
+    color: #1673df;
 }
