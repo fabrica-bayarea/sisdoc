@@ -13,3 +13,10 @@ export const flexBetween = `
     justify-content:space-between;
     align-items:center;
 `;
+
+export const flexColumnCenter = `
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+`;

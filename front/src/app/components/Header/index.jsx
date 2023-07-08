@@ -1,9 +1,11 @@
 "use client";
-import { greyPrimary100, whitePrimary100 } from "@/app/global/template/palette";
-import { flexBetween, flexCenter } from "@/app/global/utils/flexbox";
+import { useEffect } from "react";
+import { greyPrimary100, whitePrimary100 } from "../../global/template/palette";
+import { flexBetween, flexCenter } from "../../global/utils/flexbox";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { BiSolidUserCircle, BiBell } from "react-icons/bi";
 import { BsSearch } from "react-icons/bs";
 
@@ -27,15 +29,26 @@ const HeaderStyled = styled.header`
       }
     }
   }
+  .info{
+    a{
+      color:black;
+    }
+  }
 `;
 
 const Header = () => {
+  const pathname = usePathname();
   return (
     <HeaderStyled>
-      <div className="info">
-        <h1>Hi, Asaas </h1>
-        <p>home / </p>
-      </div>
+      <nav className="info">
+        <Link href="/">
+          <h1>Hi, Asaas </h1>
+        </Link>
+        <div>
+          <Link href={`/`}>Home</Link>
+          <Link href={`${pathname}`}>{pathname}</Link>
+        </div>
+      </nav>
       <ul className="settings">
         <li>
           <Link href="#">

@@ -3,7 +3,7 @@ import React from 'react'
 const head = () => {
   return (
    <>
-    <title>IESB</title>
+    <title>Arroz</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
    </>
   )
