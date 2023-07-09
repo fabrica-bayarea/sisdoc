@@ -1,12 +1,18 @@
 "use client";
 import styled from "@emotion/styled";
-import { flexBetween, flexCenter } from "../../global/utils/flexbox";
+import {
+  flexBetween,
+  flexCenter,
+  flexColumnCenter,
+} from "../../global/utils/flexbox";
 
 const ContainerStyled = styled.main`
   overflow: hidden;
   height: 100vh;
+  ${flexBetween}
   .structure {
-    ${flexBetween}
+    ${flexColumnCenter}
+    flex: 1;
   }
 `;
 

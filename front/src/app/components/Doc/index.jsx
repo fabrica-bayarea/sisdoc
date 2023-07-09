@@ -2,17 +2,22 @@
 import { greyPrimary200, whitePrimary100 } from "../../global/template/palette";
 import { flexCenter, flexColumnCenter } from "../../global/utils/flexbox";
 import styled from "@emotion/styled";
-import React from "react";
+import React, { useState } from "react";
 import { MdDateRange } from "react-icons/md";
 
 const DocStyled = styled.div`
   background: ${whitePrimary100};
-  max-width: 230px;
+  min-width: 230px;
+  max-width: 240px;
   height: 246px;
   padding: 40px;
   border-radius: 40px;
   position: relative;
   box-shadow: 10px 10px 10px #e8eaec;
+  flex: 1;
+  h3 {
+    font-size: 18px;
+  }
   .category {
     position: absolute;
     top: -30px;
@@ -22,6 +27,22 @@ const DocStyled = styled.div`
     width: 60px;
     height: 60px;
     border-radius: 100%;
+  }
+  .category-projeto {
+    background: #d289e2;
+    box-shadow: 0px 8px 10px -4px #d289e2;
+  }
+  .category-lembretes {
+    background: #fa8036;
+    box-shadow: 0px 8px 10px -4px #fa8036;
+  }
+  .category-trabalho {
+    background: #17c3a5;
+    box-shadow: 0px 8px 10px -4px #17c3a5;
+  }
+  .category-estudos {
+    background: #db6868;
+    box-shadow: 0px 8px 10px -4px #db6868;
   }
   .dice {
     ${flexColumnCenter}
@@ -51,16 +72,17 @@ const DocStyled = styled.div`
   }
 `;
 
-const Doc = () => {
+const Doc = ({ id, name, description, date, type }) => {
+  const [category, setCategory] = useState([]);
   return (
     <DocStyled>
-      <span className="category"></span>
-      <h2>Doc</h2>
+      <span className={`category category-${type}`}></span>
+      <h3>{name}</h3>
       <div className="dice">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>{description}</p>
         <p className="date">
           <MdDateRange className="icon" />
-          06/07/2023
+          {date}
         </p>
         <div className="members">
           <span className="member"></span>

@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/app/(public)/login/layout.jsx", "src/app/(authenticated)/users/layout.jsx", "src/app/(authenticated)/docs/layout.jsx", "src/app/home/layout.jsx"  ],
   "exclude": [
     "node_modules"
   ]

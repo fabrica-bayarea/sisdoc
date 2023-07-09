@@ -1,9 +1,20 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import Link from "next/link";
-import { greyPrimary200, whitePrimary100 } from "../../global/template/palette";
-import { flexCenter, flexColumnCenter } from "../../global/utils/flexbox";
+import {
+  greyPrimary100,
+  greyPrimary200,
+  whitePrimary100,
+} from "../../global/template/palette";
+import { FiLogOut } from "react-icons/fi";
+import {
+  flexAround,
+  flexCenter,
+  flexColumnBetween,
+  flexColumnCenter,
+} from "../../global/utils/flexbox";
 import { transition200 } from "../../global/utils/transition";
 import { AiFillCaretRight, AiFillCaretLeft } from "react-icons/ai";
 import { AiFillFileText, AiFillFileAdd } from "react-icons/ai";
@@ -15,12 +26,16 @@ const Aside = () => {
     min-width: ${width}px;
     max-width: ${width}px;
     padding: 20px 0px;
-    ${flexCenter}
-    align-items: start;
     position: relative;
     background: ${whitePrimary100};
-    height: calc(100vh - 100px);
+    height: 100vh;
     ${transition200}
+    ${flexColumnBetween}
+    .logo {
+      ${flexCenter}
+      gap:12px;
+      color: black;
+    }
     .btnActive {
       cursor: pointer;
       ${flexCenter}
@@ -34,48 +49,89 @@ const Aside = () => {
       border: 1px solid ${greyPrimary200};
       border-left: none;
     }
-    ul {
-      ${flexColumnCenter}
-      gap: 12px;
-      li {
-        a {
-          ${transition200}
-          ${flexCenter}
-          gap: 8px;
-          border-radius: 12px;
-          padding: 12px;
-          font-size: 14px;
-          color: black;
-          .icon {
-            font-size: 24px;
-          }
-          &:hover {
-            color: aliceblue;
-            background: #d92f34;
-          }
-        }
-        &:nth-child(1) {
+    nav {
+      ${flexColumnBetween}
+      min-height:200px;
+      ul {
+        ${flexColumnCenter}
+        gap: 12px;
+        li {
           a {
-            color: aliceblue;
-            background: #d92f34;
-          }
-        }
-      }
-    }
-    .active-false {
-      li {
-        a {
+            ${transition200}
+            ${flexCenter}
           p {
-            display: none;
+              width: 140px;
+              text-align: center;
+            }
+            gap: 8px;
+            border-radius: 12px;
+            padding: 10px;
+            font-size: 14px;
+            color: black;
+            .icon {
+              font-size: 28px;
+            }
+            &:hover {
+              color: aliceblue;
+              background: #d92f34;
+            }
+          }
+          &:nth-child(1) {
+            a {
+              color: aliceblue;
+              background: #d92f34;
+            }
           }
         }
       }
     }
-    .active-true {
+    .nav-false {
+      p,
+      h1 {
+        display: none;
+      }
+      .info {
+        img {
+          display: none;
+        }
+      }
+    }
+    .nav-true {
       li {
         a {
           width: 146px;
         }
+      }
+    }
+    .info {
+      ${flexColumnCenter}
+      .btn {
+        ${flexCenter}
+        width:100%;
+        p {
+          text-align: center;
+        }
+        gap: 12px;
+        border-radius: 12px;
+        padding: 12px;
+        font-size: 14px;
+        color: black;
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+    .info-false {
+      img {
+        display: none;
+      }
+      p {
+        display: none;
+      }
+    }
+    .info-true {
+      img {
+        display: block;
       }
     }
   `;
@@ -87,20 +143,33 @@ const Aside = () => {
   };
   return (
     <AsideStyled>
-      <ul className={`active-${active}`}>
-        <li>
-          <Link href="/">
-            <AiFillFileAdd className="icon" />
-            <p>Adicionar</p>
-          </Link>
-        </li>
-        <li>
-          <Link href="/docs">
-            <AiFillFileText className="icon" />
-            <p>Documentos</p>
-          </Link>
-        </li>
-      </ul>
+      <nav className={`nav-${active}`}>
+        <Link href="/" className="logo">
+          <Image src="/logo.png" width={42} height={48} />
+          <h1>DocMente</h1>
+        </Link>
+        <ul>
+          <li>
+            <Link href="/">
+              <AiFillFileAdd className="icon" />
+              <p>Adicionar</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/docs">
+              <AiFillFileText className="icon" />
+              <p>Documentos</p>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <div className={`info info-${active}`}>
+        <Image src="/file.png" width={160} height={160} />
+        <button className="btn">
+          <FiLogOut className="icon" />
+          <p>Sair</p>
+        </button>
+      </div>
       <button className="btnActive" onClick={handleActive}>
         {active ? <AiFillCaretLeft /> : <AiFillCaretRight />}
       </button>

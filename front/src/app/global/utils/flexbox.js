@@ -20,3 +20,15 @@ export const flexColumnCenter = `
     justify-content:center;
     align-items:center;
 `;
+export const flexColumnBetween = `
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+`;
+export const flexColumnAround = `
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+`;

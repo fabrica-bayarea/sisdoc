@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
       <GlobalStyle />
       <body>
         <Container>
-          <Header />
+          <Aside />
           <div className="structure">
-            <Aside />
+            <Header />
             <Content>{children}</Content>
           </div>
         </Container>

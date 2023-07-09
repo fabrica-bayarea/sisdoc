@@ -8,8 +8,7 @@ const ContantStyled = styled.main`
   border: 2px solid #ebeced;
   border-radius: 40px 0px 0px 0px;
   padding: 30px 40px;
-  min-width: 1100px;
-  width: 1300px;
+  width: 100%;
   height: max(100vh - 100px);
 `;
 const Content = ({ children }) => {

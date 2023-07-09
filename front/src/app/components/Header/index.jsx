@@ -13,6 +13,8 @@ const HeaderStyled = styled.header`
   ${flexBetween}
   background:${whitePrimary100};
   padding: 20px 40px;
+  width:100%;
+  flex: 1;
   .settings {
     ${flexCenter}
     gap:26px;
@@ -29,9 +31,9 @@ const HeaderStyled = styled.header`
       }
     }
   }
-  .info{
-    a{
-      color:black;
+  .info {
+    a {
+      color: black;
     }
   }
 `;
@@ -41,8 +43,8 @@ const Header = () => {
   return (
     <HeaderStyled>
       <nav className="info">
-        <Link href="/">
-          <h1>Hi, Asaas </h1>
+        <Link href="/users">
+          <h2>Hi, Asaas </h2>
         </Link>
         <div>
           <Link href={`/`}>Home</Link>

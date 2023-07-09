@@ -2,6 +2,7 @@
 import styled from "@emotion/styled";
 import Doc from "../components/Doc";
 import { flexCenter, flexColumnCenter } from "../global/utils/flexbox";
+import { whitePrimary100 } from "../global/template/palette";
 
 const HomeStyled = styled.section`
   height: 100%;
@@ -13,7 +14,9 @@ const HomeStyled = styled.section`
   }
   .description {
     margin: 60px 0px;
-    padding: 0px 20px;
+    padding: 10px 40px;
+    background: ${whitePrimary100};
+    border-radius: 40px;
     table {
       width: 100%;
       tr {
@@ -39,10 +42,30 @@ export default function Home() {
     <HomeStyled>
       <div className="filters"></div>
       <div className="docs">
-        <Doc />
-        <Doc />
-        <Doc />
-        <Doc />
+        <Doc
+          id={12378127938}
+          name={"Documento"}
+          description={"Sem descrição"}
+          date={"09/07/2023"}
+        />
+        <Doc
+          id={12378127938}
+          name={"Documento"}
+          description={"Sem descrição"}
+          date={"09/07/2023"}
+        />
+        <Doc
+          id={12378127938}
+          name={"Documento"}
+          description={"Sem descrição"}
+          date={"09/07/2023"}
+        />
+        <Doc
+          id={12378127938}
+          name={"Documento"}
+          description={"Sem descrição"}
+          date={"09/07/2023"}
+        />
       </div>
       <div className="description">
         <table>

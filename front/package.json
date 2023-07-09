@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:start": "json-server -w ./src/json/docs.json -p 3002"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@types/node": "20.4.0",
-    "@types/react": "18.2.14"
+    "@types/react": "18.2.14",
+    "nodemon": "^2.0.22"
   }
 }
