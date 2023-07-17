@@ -35,7 +35,8 @@ Abaixo temos uma lista de pessoas que participaram deste projeto ao longo dos an
 | milena.borges@iesb.edu.br | Milena de Brito Borges | Scrum Master, Analista de Requisitos e Testes|
 | isaias.ramos.olive@gmail.com | Isaías Ramos de Oliveira | Lider de Equipe e Desenvolvedor Frontend |
 | leticia.jcj@gmail.com | Letícia Oliveira do Nascimento | Desenvolvedor Frontend |
-| rgn.df.18@gmail.com | Rafael Gonçalves Nobre | Desenvolvedor Frontend |
+| Stephany_janiclecia@hotmail.com | Stephany Janiclecia Bezerra | Desenvolvedor Frontend |
+| victordesousaa@gmail.com | Víctor de Sousa Alencar | Desenvolvedor Frontend |
 | rodrigo.verbo@gmail.com | Rodrigo Braga Sato de Santana | Lider de Equipe e Desenvolver Backend | 
 | thomaz_ca12@hotmail.com | Thomaz Conessa | Desenvolvedor Backend |
 | dinizmedeirosgabriel@gmail.com | Gabriel Diniz Medeiros | Desenvolvedor Backend |
