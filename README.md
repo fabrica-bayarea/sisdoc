@@ -37,6 +37,7 @@ Abaixo temos uma lista de pessoas que participaram deste projeto ao longo dos an
 | leticia.jcj@gmail.com | Letícia Oliveira do Nascimento | Desenvolvedor Frontend |
 | Stephany_janiclecia@hotmail.com | Stephany Janiclecia Bezerra | Desenvolvedor Frontend |
 | victordesousaa@gmail.com | Víctor de Sousa Alencar | Desenvolvedor Frontend |
+| luccasschepis@outlook.com | Luccas Roberto Schepis Furtado de Mello RIbeiro | Desenvolvedor Frontend |
 | rodrigo.verbo@gmail.com | Rodrigo Braga Sato de Santana | Lider de Equipe e Desenvolver Backend | 
 | thomaz_ca12@hotmail.com | Thomaz Conessa | Desenvolvedor Backend |
 | dinizmedeirosgabriel@gmail.com | Gabriel Diniz Medeiros | Desenvolvedor Backend |
