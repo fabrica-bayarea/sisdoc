@@ -1,13 +1,8 @@
-require('dotenv').config();
-const express = require('express');
+require("dotenv").config();
+const express = require("express");
 const route = express.Router();
-const { teste } = require('../controllers/testController');
+const { testeApp } = require("../controllers/testeApp");
 
+route.get("/teste", testeApp);
 
-route.get('/teste', teste);
-
-
-
-module.exports = route
-
-
+module.exports = route;
