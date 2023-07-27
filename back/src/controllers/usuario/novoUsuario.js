@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const enviarEmail = require("../../utils/enviarEmail");
 const gerarUrl = require("../../utils/gerarUrl");
+const { Exception } = require("handlebars");
 
 const novoUsuario = async (req, res) => {
   const { cpf, nome, email, senha, telefone, tipo_telefone } = req.body;
@@ -31,7 +32,6 @@ const novoUsuario = async (req, res) => {
       ]);
     }
     const url = gerarUrl(req, "/auth/validarusuario", token);
-    console.log(url);
     enviarEmail({
       to: email,
       subject: "Verifique sua conta!",
@@ -40,12 +40,15 @@ const novoUsuario = async (req, res) => {
         nome,
         validacaoLink: url,
       },
+    }).catch((error) => {
+      throw new Error("Erro ao enviar o e-mail de validação do usuário");
     });
-
     await transacao.query("COMMIT");
-
     console.log("Usuário e telefone(s) inseridos com sucesso.");
-    return res.sendStatus(204);
+    return res.status(201).json({
+      mensagem:
+        "É necessário validar o cadastro, foi enviado um e-mail ao endereço informado. Por favor clique em ativar para poder acessar o sistema!",
+    });
   } catch (error) {
     await transacao.query("ROLLBACK");
     console.error("Erro ao inserir usuário e telefone(s):", error);

@@ -1,5 +1,4 @@
 require("dotenv").config();
-console.log(process.env.NODE_ENV);
 
 const gerarUrl = (req, path, token) => {
   const host = req.headers.host;

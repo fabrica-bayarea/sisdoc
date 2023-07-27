@@ -7,6 +7,7 @@ const { emailExiste } = require("../middlewares/EmailExiste");
 const novoUsuario = require("../controllers/usuario/novoUsuario");
 const validarBody = require("../middlewares/validarBody");
 const cpfExiste = require("../middlewares/cpfExiste");
+const validarUsuario = require("../controllers/auth/validarUsuario");
 
 route.get("/teste", testeApp);
 route.post(
@@ -16,5 +17,6 @@ route.post(
   emailExiste(false),
   novoUsuario
 );
+route.get("/auth/validarusuario", validarUsuario);
 
 module.exports = route;
