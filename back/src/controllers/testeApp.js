@@ -1,4 +1,4 @@
-const pool = require("../configs/dbConfig");
+const pool = require("../configs/pgConexao");
 
 const testeApp = async (req, res) => {
   try {

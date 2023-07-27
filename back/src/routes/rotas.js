@@ -6,12 +6,14 @@ const { schemaCadastroUsuario } = require("../middlewares/schemas/schemaJoi");
 const { emailExiste } = require("../middlewares/EmailExiste");
 const novoUsuario = require("../controllers/usuario/novoUsuario");
 const validarBody = require("../middlewares/validarBody");
+const cpfExiste = require("../middlewares/cpfExiste");
 
 route.get("/teste", testeApp);
 route.post(
   "/usuario/novousuario",
   validarBody(schemaCadastroUsuario),
-  emailExiste(true),
+  cpfExiste,
+  emailExiste(false),
   novoUsuario
 );
 

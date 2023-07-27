@@ -24,6 +24,9 @@ const schemaCadastroUsuario = joi.object({
       "string.pattern.base":
         "O telefone informado não é válido. Use somente números (10 ou 11 dígitos).",
     }),
+  tipo_telefone: joi.string().allow("").messages({
+    "string.base": "O campo tipo_telefone deve ser um texto.",
+  }),
 });
 
 const schemaLogin = joi.object({
