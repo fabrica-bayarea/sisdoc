@@ -4,7 +4,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const enviarEmail = require("../../utils/enviarEmail");
 const gerarUrl = require("../../utils/gerarUrl");
-const { Exception } = require("handlebars");
 
 const novoUsuario = async (req, res) => {
   const { cpf, nome, email, senha, telefone, tipo_telefone } = req.body;
@@ -31,7 +30,7 @@ const novoUsuario = async (req, res) => {
         cpf,
       ]);
     }
-    const url = gerarUrl(req, "/auth/validarusuario", token);
+    const url = gerarUrl(req, "/app/usuario/validacao", token);
     enviarEmail({
       to: email,
       subject: "Verifique sua conta!",
