@@ -12,6 +12,9 @@ const validarBody = require("../middlewares/validarBody");
 const cpfExiste = require("../middlewares/cpfExiste");
 const validarUsuario = require("../controllers/usuario/validarUsuario");
 const login = require("../controllers/auth/login");
+const multer = require("../configs/multer");
+const novoDocumento = require("../controllers/arquivo/novoDocumento");
+const validarLogin = require("../middlewares/validarLogin");
 
 route.get("/teste", testeApp);
 route.post(
@@ -28,5 +31,7 @@ route.post(
   emailExiste(true),
   login
 );
+route.use(validarLogin);
+route.post("/app/documentos/cadastro", multer.single("arquivo"), novoDocumento);
 
 module.exports = route;

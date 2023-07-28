@@ -15,3 +15,5 @@ const uploadArquivo = async (path, buffer, mimetype) => {
     path: arquivo.Key,
   };
 };
+
+module.exports = uploadArquivo;
