@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const LoginStyled = styled.section`
   ${flexBetween}
-  height:100vh;
+  height: 100%;
   .form,
   .description {
     ${flexColumnCenter}
@@ -47,7 +47,7 @@ const Login = () => {
         <Image src="/login.png" width={300} height={320} />
       </div>
       <div className="form">
-        <form action="/home">
+        <form action="/">
           <div>
             <input type="text" placeholder="Nome" />
           </div>

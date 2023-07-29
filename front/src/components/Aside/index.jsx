@@ -150,7 +150,7 @@ const Aside = () => {
         </Link>
         <ul>
           <li>
-            <Link href="/">
+            <Link href="/form">
               <AiFillFileAdd className="icon" />
               <p>Adicionar</p>
             </Link>

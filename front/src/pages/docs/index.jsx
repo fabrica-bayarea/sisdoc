@@ -6,11 +6,11 @@ import Doc from "../../components/Doc";
 
 const DocsStyled = styled.section`
   ${flexCenter}
-  justify-content:start;
   height: 100%;
-  margin-top: 18px;
+  padding-top: 20px;
   flex-wrap: wrap;
-  gap: 40px 20px;
+  gap: 40px;
+  margin: auto;
   .warning {
     margin: auto;
   }
@@ -20,9 +20,9 @@ const Docs = () => {
   const [docs, setDocs] = useState([]);
   useEffect(() => {
     const getDocs = async () => {
-      const resJSON = await fetch("http://localhost:3002/docs");
+      const resJSON = await fetch("/api/docs");
       const res = await resJSON.json();
-      setDocs(res);
+      setDocs(res.docs);
     };
     getDocs();
   }, []);

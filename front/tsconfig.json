@@ -21,14 +21,19 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/app/(public)/login/layout.jsx", "src/app/(authenticated)/users/layout.jsx", "src/app/(authenticated)/docs/layout.jsx", "src/app/home/layout.jsx"  ],
+    "**/*.tsx",
+    "src/app/(public)/login/layout.jsx",
+    "src/pages/users/layout.jsx",
+    "src/app/authenticated/docsx/layout.jsx",
+    "src/app/home/layout.jsx"
+, "src/components/Table/index.jsx"  ],
   "exclude": [
     "node_modules"
   ]

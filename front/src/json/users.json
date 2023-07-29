@@ -1,0 +1,40 @@
+{
+    "users": [
+        {
+          "cpf": "12343478900",
+          "nome": "maria",
+          "email": "maria@gmail.com",
+          "senha": "senha123",
+          "perfil_id": 1,
+          "telefone_tipo": "celular",
+          "telefone_numero": "123456789"
+        },
+        {
+          "cpf": "823749273847",
+          "nome": "isaias",
+          "email": "isaias@gmail.com",
+          "senha": "123456",
+          "perfil_id": 1,
+          "telefone_tipo": "celular",
+          "telefone_numero": "123456789"
+        },
+        {
+          "cpf": "123434232900",
+          "nome": "thiago",
+          "email": "thiago@gmail.com",
+          "senha": "123456",
+          "perfil_id": 1,
+          "telefone_tipo": "celular",
+          "telefone_numero": "123456789"
+        },
+        {
+          "cpf": "12343478900",
+          "nome": "rodrigo",
+          "email": "rodrigo@gmail.com",
+          "senha": "123456",
+          "perfil_id": 1,
+          "telefone_tipo": "celular",
+          "telefone_numero": "123456789"
+        }
+    ]
+}

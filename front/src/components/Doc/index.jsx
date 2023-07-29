@@ -75,7 +75,7 @@ const DocStyled = styled.div`
 const Doc = ({ id, name, description, date, type }) => {
   const [category, setCategory] = useState([]);
   return (
-    <DocStyled>
+    <DocStyled className="doc">
       <span className={`category category-${type}`}></span>
       <h3>{name}</h3>
       <div className="dice">
