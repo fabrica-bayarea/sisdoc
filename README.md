@@ -14,9 +14,10 @@ Detalhar como um usuário pode instalar e usar o sistema
 
 ### Front-end
  - Next
- - Redux saga
- - JavaScript
- - Emotion
+ - Redux Toolkit
+ - TypeScript
+ - Vanilla Extract
+ - Material UI
 
  ### Back-end
  - NodeJS
